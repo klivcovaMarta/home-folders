@@ -1,0 +1,168 @@
+:root {
+  --light: #fafafa;
+  --red: #e53935;
+  --green: #4caf50;
+  --blue: #2196f3;
+}
+
+html {
+  color: #333;
+  font: 18px/1.5 sans-serif;
+
+  background-color: var(--light);
+}
+
+body {
+  margin: 0;
+  padding: 50px 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+  margin-top: 5px;
+}
+
+/* BEGIN (write your solution here) */
+
+.histogram {
+  display: flex;
+  flex-direction: column;
+}
+.histogram-header {
+  display: flex;
+  justify-content: center;
+}
+[class*='histogram-header-'] {
+  position: relative;
+}
+.histogram-header-blue::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  background-color: var(--blue);
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.histogram-header-red::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red);
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.histogram-header-green::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  background-color: var(--green);
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+tbody {
+  display: flex;
+  justify-content: space-between;
+}
+.histogram-row {
+  position: relative;
+
+  margin-top: 50px;
+
+  min-height: 400px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+}
+.histogram-name {
+  position: absolute;
+  top: -25px;
+  left: 32%;
+  color: #333;
+  font: 18px/1.5 sans-serif;
+  font-weight: bold;
+}
+
+.histogram-col {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.histogram-col p {
+  text-align: center;
+}
+.histogram-blue {
+  background-color: var(--blue);
+  display: block;
+}
+.histogram-red {
+  background-color: var(--red);
+
+  display: flex;
+}
+.histogram-green {
+  background-color: var(--green);
+  display: block;
+}
+[data-height='40k'] {
+  flex-basis: 40%;
+}
+[data-height='80k'] {
+  flex-basis: 80%;
+}
+[data-height='75k'] {
+  flex-basis: 75%;
+}
+[data-height='35k'] {
+  flex-basis: 35%;
+}
+[data-height='63k'] {
+  flex-basis: 63%;
+}
+[data-height='50k'] {
+  flex-basis: 50%;
+}
+[data-height='90k'] {
+  flex-basis: 90%;
+}
+[data-height='77k'] {
+  flex-basis: 77%;
+}
+[data-height='80k'] {
+  flex-basis: 80%;
+}
+/* END */
+
+.w-50px {
+  width: 50px;
+}
+
+.mt-50px {
+  margin-top: 50px;
+}
+
+.px-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}

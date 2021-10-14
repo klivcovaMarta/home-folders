@@ -1,0 +1,107 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Roboto Mono';
+  src: url(../assets/fonts/RobotoMono-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-weight: 100;
+  font-family: 'Roboto Mono';
+  src: url(../assets/fonts/RobotoMono-Thin.woff2) format('woff2');
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  font-family: 'Roboto Mono', monospace;
+
+  background: #333131;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* BEGIN (write your solution here) */
+.calculation {
+  width: 300px;
+  background: #2c3e50;
+  font-family: 'Roboto Mono';
+}
+
+.result_calculations {
+  padding: 30px;
+
+  color: white;
+  background: #505c68;
+
+  text-align: right;
+}
+
+.body_block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* flex-контейнер */
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  display: flex;
+}
+
+/* flex-элемент */
+.row1 button,
+.row2 button,
+.row3 button,
+.row4 button,
+.row5 button {
+  display: block;
+  height: 75px;
+  font-size: 1.2em;
+  color: white;
+
+  border: none;
+  background: none;
+
+  flex: 0 1 25%;
+
+  cursor: pointer;
+}
+
+.row1 button:hover,
+.row2 button:hover,
+.row3 button:hover,
+.row4 button:hover,
+.row5 button:hover {
+  background: #364c63;
+}
+
+button.button_delete {
+  font-size: 80%;
+}
+
+/* END */
+
+button.bg-blue {
+  background: #3498db;
+}
+
+button.bg-blue:hover {
+  background: #67b2e4;
+}
+
+.text-gray {
+  color: #ced4d9;
+  font-size: 80%;
+}
+
+.text-big {
+  font-size: 3em;
+}

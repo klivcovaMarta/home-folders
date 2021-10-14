@@ -1,0 +1,44 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  font-family: 'Roboto Mono', monospace;
+
+  background: #333131;
+  margin-bottom: 100px;
+}
+
+.calculation {
+  width: 300px;
+  background: #2c3e50;
+  margin: 100px;
+}
+.body_block {
+  background: rgb(213, 226, 28);
+  border: 2px dotted orange;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+класс body_block  <!-- Родитель -->
+класс row1        <!-- flex-контейнер --> 
+тег   button      <!-- flex-элемент -->
+*/
+
+/* flex-контейнер */
+.row1 {
+  background: rgb(132, 199, 101);
+  border: 2px solid #ece89d;
+
+  display: flex;
+}
+
+/* flex-элемент */
+.row1 button {
+  height: 75px;
+  font-size: 30px;
+  border: 3px solid #5e5373;
+  flex: 0 1 25%;
+}

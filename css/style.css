@@ -1,0 +1,81 @@
+body {
+  background: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #f9f9f9;
+}
+
+.hh {
+  background: #000;
+}
+
+.header {
+  padding: 20px 40px;
+}
+
+.header-white {
+  background: #000;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav li {
+  /* BEGIN (write your solution here) */
+  position: relative;
+  /* END */
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.sub-menu {
+  /* BEGIN (write your solution here) */
+  display: none;
+  /* END */
+}
+
+.nav li:hover > .sub-menu {
+  /* BEGIN (write your solution here) */
+  position: absolute;
+  left: 0;
+  display: block;
+  /* END */
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-top: 25px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 5px 0 #f0f0f0;
+  box-shadow: 5px 5px 5px 0 #f0f0f0;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav .nav-title {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav li:hover > a,
+.nav li:hover > .nav-title {
+  color: #717171;
+}

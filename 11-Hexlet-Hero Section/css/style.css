@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Brygada 1918';
+  src: url('../assets/fonts/Brygada-1918.woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.woff2');
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1900px;
+  height: 912px;
+
+  background: #0b1d26;
+  color: #ffffff;
+
+  display: flex;
+}
+.number01 {
+  position: absolute;
+  left: -100px;
+  top: -30px;
+  width: 233px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 0%;
+
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  opacity: 0.1;
+}
+.left-side {
+  position: relative;
+
+  margin: 100px 0 100px 375px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 1 50%;
+}
+
+.proffession__name {
+  position: relative;
+  top: 12px;
+
+  padding-left: 100px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  color: #f7df1e;
+}
+.proffession__name::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  border: 1px solid #f7df1e;
+
+  width: 70px;
+  height: 0px;
+}
+.title {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 70px;
+}
+.title__description {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 36px;
+}
+.link {
+}
+.link__text {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 39px;
+
+  color: #f7df1e;
+}
+.link__row {
+  position: relative;
+  top: 2px;
+  left: 10px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25.5px;
+  line-height: 25px;
+
+  color: #f7df1e;
+}
+.right-side {
+  margin: 100px 305px 100px 0;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 50%;
+}
+.right-side__image {
+  width: 480px;
+  height: 700px;
+}

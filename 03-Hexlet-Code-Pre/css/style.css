@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+  background: #7e57c2;
+}
+.terminal {
+  padding: 20px 30px;
+  color: white;
+  background: #263238;
+  border-radius: 5px;
+}
+.terminal__points {
+  display: inline-block;
+
+  border: none;
+  background: none;
+
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+.points_red {
+  background: #ff5f56;
+}
+.points_orange {
+  background: #ffbd2e;
+}
+.points_green {
+  background: #27c93f;
+}
+pre {
+  margin: 0;
+}
+code {
+  font: 18px/1.5 'JetBrains Mono';
+}
+.terminal__text_red {
+  color: #ff5370;
+}
+.terminal__text_yellow {
+  color: #ffcb6b;
+}
+.terminal__text_green {
+  color: #c3e88d;
+}

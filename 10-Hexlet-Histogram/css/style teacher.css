@@ -1,0 +1,167 @@
+:root {
+  --light: #fafafa;
+  --red: #e53935;
+  --green: #4caf50;
+  --blue: #2196f3;
+}
+
+html {
+  color: #333;
+  font: 18px/1.5 sans-serif;
+
+  background-color: var(--light);
+}
+
+body {
+  margin: 0;
+  padding: 50px 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+  margin-top: 5px;
+}
+
+/* BEGIN */
+
+.histogram {
+  width: 100%;
+}
+
+.histogram-row {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+  padding: 0 50px;
+}
+
+.histogram-header {
+  display: flex;
+  justify-content: center;
+}
+
+[class*='histogram-header-'] {
+  position: relative;
+}
+
+[class*='histogram-header-']::before {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  transform: translateY(-50%);
+
+  content: '';
+}
+
+.histogram-header-red::before {
+  background: var(--red);
+}
+
+.histogram-header-green::before {
+  background-color: var(--green);
+}
+
+.histogram-header-blue::before {
+  background-color: var(--blue);
+}
+
+.histogram-body {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.histogram-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.histogram-name {
+  position: absolute;
+  top: -25px;
+
+  width: 100%;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.histogram-red {
+  background-color: var(--red);
+}
+
+.histogram-green {
+  background-color: var(--green);
+}
+
+.histogram-blue {
+  background-color: var(--blue);
+}
+
+[data-value='35'] {
+  height: 35%;
+}
+
+[data-value='40'] {
+  height: 40%;
+}
+
+[data-value='50'] {
+  height: 50%;
+}
+
+[data-value='63'] {
+  height: 63%;
+}
+
+[data-value='75'] {
+  height: 75%;
+}
+
+[data-value='77'] {
+  height: 77%;
+}
+
+[data-value='80'] {
+  height: 80%;
+}
+
+[data-value='90'] {
+  height: 90%;
+}
+
+/* END */
+
+.w-50px {
+  width: 50px;
+}
+
+.mt-50px {
+  margin-top: 50px;
+}
+
+.px-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
