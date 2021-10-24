@@ -1,11 +1,81 @@
-@function fib($number) {
-  @if ($number == 0 or $number == 1) {
-   @return $number;
-  } @else {
-    @return fib($number - 2) + fib($number - 1);
-  }
- }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 0;
 
- .class {
-   content: fib(13);
- }
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 180px;
+}
+
+.square {
+  position: relative;
+
+  width: 100px;
+  height: 100px;
+
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+
+  background: #03a9f4;
+  
+  animation: 3s linear infinite rotate;
+  transform-origin: left top;
+}
+
+.pivont-point {
+  position: absolute;
+
+  color: #363636;
+  font-size: 30px;
+  // выносит точку за край угла
+  transform: translate(-50%, -50%);
+  /*
+ &.center {
+    top: 60%;
+    left: 40%;
+  }
+   
+  &.lefttop {
+    top: 12%;
+    left: 23%;
+  }
+  */
+  &.centertop {
+    top: -10%;
+    left: 70%;
+  }
+}
+
+.origin {
+   /*
+  &-center {
+    transform-origin: 40% 60%;
+  }
+ 
+  &-lefttop {
+    transform-origin: 23% 12%;
+  }
+   */
+  &-centertop {
+    transform-origin: 70% -10%;
+  }
+ 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(360deg);
+  }
+}

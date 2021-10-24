@@ -41,9 +41,18 @@ body {
   left: 0;
 
   margin: auto;
-  /* END */
-}
 
+  /*!       Следующий вариант лучше (исп-ся обсолютное позиц-е */
+  /*!       и трансформация) 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ transform: translate(-50%, -50%);
+
+  margin: auto;
+}
+*/
+/* END */
 h2 {
   margin: 0 0 1em;
 
