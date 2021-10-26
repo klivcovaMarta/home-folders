@@ -1,81 +1,87 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
   margin: 0;
+  padding: 0;
 
+  color: #333;
   font-family: sans-serif;
+  line-height: 1.5;
+
+  background: #f9f9f9;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-rows: repeat(3, 100px);
-  grid-gap: 180px;
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 90px;
+  padding: 20px 40px;
+
+  overflow: hidden;
 }
 
-.square {
-  position: relative;
-
-  width: 100px;
-  height: 100px;
-
-  color: #fff;
-  font-size: 1.5em;
-  text-align: center;
-
-  background: #03a9f4;
-  
-  animation: 3s linear infinite rotate;
-  transform-origin: left top;
+.header-white {
+  background: #fff;
 }
 
-.pivont-point {
-  position: absolute;
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 
-  color: #363636;
-  font-size: 30px;
-  // выносит точку за край угла
-  transform: translate(-50%, -50%);
-  /*
- &.center {
-    top: 60%;
-    left: 40%;
-  }
-   
-  &.lefttop {
-    top: 12%;
-    left: 23%;
-  }
-  */
-  &.centertop {
-    top: -10%;
-    left: 70%;
-  }
+  list-style: none;
 }
 
-.origin {
-   /*
-  &-center {
-    transform-origin: 40% 60%;
-  }
- 
-  &-lefttop {
-    transform-origin: 23% 12%;
-  }
-   */
-  &-centertop {
-    transform-origin: 70% -10%;
-  }
- 
+.nav li {
+  padding: 10px 20px;
+
+  cursor: pointer;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
+.nav a {
+  color: inherit;
+
+  font-weight: bold;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.nav li:hover > a {
+  color: #717171;
+}
+
+/* BEGIN (write your solution here) */
+.custom-checkbox, .burger{
+  display: none;
+ }
+/* END */
+
+@media screen and (max-width: 500px) {
+  /* BEGIN (write your solution here) */
+  .burger{
+    display: block;}
+
+  .nav{
+    display: none;
   }
-  
-  to {
-    transform: rotate(360deg);
+  /* END */
+
+  .nav ul {
+    display: block;
   }
+
+  .nav li {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* BEGIN (write your solution here) */
+  .burger:checked{
+    .nav{
+      display: block;
+    }
+  }
+  /* END */
 }

@@ -53,13 +53,9 @@ body {
 }
 
 /* BEGIN (write your solution here) */
-.custom-checkbox{
-  position: absolute;
-  opacity: 0.5;
-  z-index: -1;
-}
-.burger{
+.nav {
   display: none;
+  width: 100%;
 }
 
 /* END */
@@ -69,20 +65,24 @@ body {
 @media screen and (max-width: 500px) {
 
   /* BEGIN (write your solution here) */
-  .burger{
-  display: block;
-  }
-  .nav {
-    display: none;
-  }
-  .custom-checkbox:checked ~ .burger{
-    
-    width: 100%;
-  }
-  .custom-checkbox:checked ~ .nav {
+  .nav-toggle-label::before {
     display: block;
-     width: 100%;
+    width: 50px;
+    height: 50px;
+
+    background: url("../assets/menu.svg") no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+
+    content: "";
   }
+
+  .nav-toggle:checked + .nav {
+    display: block;
+    margin-left: 0;
+  }
+
   /* END */
 
 
@@ -97,15 +97,8 @@ body {
   }
 
   /* BEGIN (write your solution here) */
-  .header{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-  }
-
-  img{
-    width: 50px;
-    height: 50px;
+  .nav-toggle {
+    display: none;
   }
   /* END */
 }
