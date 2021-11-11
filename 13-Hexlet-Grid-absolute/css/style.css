@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../src/fonts/Raleway-Bold.ttf');
+}
+
+:root {
+  --color-gray: #dfe2d9;
+  --color-dark: #333;
+  --font-style: 'Raleway', sans-serif;
+  --vertical-line-height: 25vh;
+}
+
+body {
+  box-sizing: border-box;
+  width: 715px;
+  margin: 0 auto;
+  padding: 20px 0 calc(var(--vertical-line-height) / 2);
+
+  color: var(--color-dark);
+  font-family: var(--font-style);
+  line-height: 1.7;
+
+  background: var(--color-gray);
+
+}
+
+p {
+  margin: 0;
+
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+
+  font-size: 80px;
+}
+
+/* BEGIN (write your solution here) */
+
+/*!  Header*/
+.grid__header{
+  box-sizing: border-box;
+  grid-row: 1;
+
+  display: grid;
+  grid-template-columns: repeat(5, 85px);
+  column-gap: 55px;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "w w . j j"
+  "t t t t t";
+ /* align-content: center;*/
+  justify-content: end;
+}
+.header__weekend{
+  grid-area: w;
+}
+.header__january{
+  grid-area:j;
+}
+.header__title{
+  grid-area: t;
+}
+
+.blue1{background-color: yellow;}
+/*!  Content */
+.grid__content{
+  box-sizing: border-box;
+  grid-row: 2;
+  padding-top: 80px;
+
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(2, 25vh);
+  row-gap: 40px;
+  grid-template-columns: repeat(5, 85px);
+  column-gap: 55px;
+  justify-content: end;
+}
+.absolute{
+  box-sizing: border-box;
+  grid-row: 1; 
+  position: absolute;
+  top: 12.5vh;
+  left: 0;
+
+
+  height: 50vh;
+
+ display: grid;
+ grid-template-columns: repeat(5, 85px);
+  column-gap: 55px;
+}
+.grid__orange{
+  grid-row: 1;
+}
+.grid__pink{
+  grid-row: 2;  
+}
+/* END */
+
+.blue {
+  background: #0271a1;
+  opacity: 0.7;
+  
+}
+
+.orange {
+  background: #f37022;
+}
+
+.pink {
+  background: #cd0076;
+}

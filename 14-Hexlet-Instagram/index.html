@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VS code</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <body>
+      <div class="mobile">
+        <header class="mobile-header">
+          <div class="mr-5 w-15 icon icon-signal"></div>
+          <div class="mr-5 w-15 icon icon-connection"></div>
+          <div class="icon w-15 icon-battery"></div>
+          <div class="mobile-time ml-auto">15:23</div>
+        </header>
+        <main class="instagram-app">
+          <!-- BEGIN (write your solution here) -->
+    
+          <!-- Header -->
+          <section class="instagram-app__header header">
+            <h1 class="header__instagram">Instagram</h1>
+            <button class="icon icon-camera"></button>
+            <button class="icon icon-igtv"></button>
+            <button class="icon icon-messanger"></button>
+          </section>
+    
+          <!-- Stories -->
+          <section class="instagram-app__stories stories border-top border-bottom">
+            <div class="stories__item">
+              <button class="stories__avatar">
+                        <img src="../assets/images/avatar_1.jpg" alt="avatar_1">
+                      </button>
+              <h3 class="stories__name">Ваша история</h3>
+            </div>
+            <div class="stories__item">
+              <button class="stories__avatar">
+                        <img src="../assets/images/avatar_2.jpg" alt="avatar_2">
+                      </button>
+              <h3 class="stories__name">alex</h3>
+            </div>
+            <div class="stories__item">
+              <button class="stories__avatar">
+                        <img src="../assets/images/avatar_3.jpg" alt="avatar_3">
+                      </button>
+              <h3 class="stories__name">jediAcademy</h3>
+            </div>
+            <div class="stories__item">
+              <button class="stories__avatar">
+                        <img src="../assets/images/avatar_4.jpg" alt="avatar_4">
+                      </button>
+              <h3 class="stories__name">PythonCool</h3>
+            </div>
+          </section>
+    
+          <!-- User-story -->
+          <section class="instagram-app__user-story user-story">
+            <section class="user-story__header-story header-story">
+              <button class="user-story__icon-avatar icon-avatar icon"></button>
+          
+              <p class="header-story__text">
+                <span class="user-name bold">hexlet_code</span>
+                <br>Miami
+              </p>
+          
+              <button class="icon icon-more"></button>
+            </section>
+          
+            <section class="user-story__big-image">
+              <img src="../assets/images/post-image.jpg" alt="big-photo">
+            </section>
+          
+            <section class="user-story__footer-story footer-story border-bottom">
+              <div class="footer-story__icons">
+                <button class="icon icon-like"></button>
+                <button class="icon icon-comment"></button>
+                <button class="icon icon-messanger footer-story__icon-messanger"></button>
+                <button class="icon icon-save"></button>
+              </div>
+              <p class="footer-story__count bold">Нравится: 2 165</p>
+              <p class="footer-story__description">
+                <span class="user-name bold">hexlet_code</span>
+                А скоро мы хотим открыть направление фотографии.
+                Записывайтесь
+              </p>
+            </section>
+          </section>
+    
+          <!-- Footer -->
+          <section class="instagram-app__footer">
+            <button class="icon icon-home"></button>
+            <button class="icon icon-search"></button>
+            <button class="icon icon-add"></button>
+            <button class="icon icon-like"></button>
+            <button class="icon icon-avatar footer__icon-avatar"></button>
+          </section>
+    
+    
+          <!-- END -->
+        </main>
+      </div>
+    </body>
+
+      <!-- Решение учителя
+      
+       <!-- BEGIN -->
+       <header class="instagram-header">
+        <button class="icon icon-camera" aria-label="Снять историю"></button>
+        <h1>Instagram</h1>
+        <div class="justify-end">
+          <button class="mr-15 icon icon-igtv" aria-label="IGTV"></button>
+          <button class="icon icon-messanger" aria-label="Сообщения"></button>
+        </div>
+      </header>
+      <section class="border-top border-bottom">
+        <h2 class="sr-only">Истории</h2>
+        <div class="instagram-stories">
+          <button class="instagram-stories-item">
+            <img src="./assets/images/avatar_1.jpg" alt="Ваша история" class="avatar">
+            <span class="name">Ваша история</span>
+          </button>
+          <button class="instagram-stories-item">
+            <img src="./assets/images/avatar_2.jpg" alt="История alex" class="avatar">
+            <span class="name">alex</span>
+          </button>
+          <button class="instagram-stories-item">
+            <img src="./assets/images/avatar_3.jpg" alt="История jediAcademy" class="avatar">
+            <span class="name">jediAcademy</span>
+          </button>
+          <button class="instagram-stories-item">
+            <img src="./assets/images/avatar_4.jpg" alt="История PythonCool" class="avatar">
+            <span class="name">PythonCool</span>
+          </button>
+        </div>
+      </section>
+      <section class="instagram-post">
+        <h2 class="sr-only">Пост</h2>
+        <header class="instagram-post-header">
+          <div class="instagram-post-author">
+            <img src="./assets/images/avatar_5.jpg" alt="hexlet_code" class="avatar">
+            <div class="author-name">
+              <p class="bold">hexlet_code</p>
+              <p>Miami</p>
+            </div>
+          </div>
+          <button class="icon icon-more w-15" aria-label="Больше действий"></button>
+        </header>
+        <img src="./assets/images/post-image.jpg" alt="Фотография пользователя hexlet_code">
+        <footer class="instagram-post-footer border-bottom">
+          <div class="instagram-post-actions">
+            <button class="icon icon-like" aria-label="Нравится"></button>
+            <button class="icon icon-comment" aria-label="Комментарий"></button>
+            <button class="icon icon-messanger" aria-label="Сообщение"></button>
+            <button class="grid-column-end ml-auto icon icon-save" aria-label="Сохранить в закладки"></button>
+          </div>
+          <p class="bold">Нравится: 2 165</p>
+          <p><span class="bold">hexlet_code</span> А скоро мы хотим открыть направление фотографии. Записывайтесь</p>
+        </footer>
+      </section>
+      <footer class="instagram-footer">
+        <button class="icon icon-home" aria-label="Домашняя страница"></button>
+        <button class="icon icon-search" aria-label="Поиск"></button>
+        <button class="icon icon-add" aria-label="Добавить пост"></button>
+        <button class="icon icon-like" aria-label="Уведомления"></button>
+        <button class="w-25 icon" aria-label="Профиль">
+          <img class="rounded" src="./assets/images/avatar_5.jpg" alt="hexlet_code">
+        </button>
+      </footer>
+      <!-- END -->
+styles/app.css
+styles/app.css
+
+-->
+    
+</html>
+
+
